@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Myfolio</title>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<link rel="stylesheet" href="components/css/style.css">
+	</head>
+	<body style="transition-duration: .4s;
+		background-color: #121212 !important;
+		background-image: url(components/images/test.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 100vh !important;" class="d-flex h-100 text-bg-dark">
+		<div class="container-fluid-lg d-flex w-100 h-100 p-3 flex-column">
+			<header class="mb-4">
+				<div>
+					<h3 class="float-md-start fw-bold user-select-none mb-0"><span class="css-selector">Myfolio</span></h3>
+				</div>
+			</header>
+			<main class="container">
+				<div class="row">
+					<div class="col-md">
+ 						  <figure>
+							<blockquote class="blockquote">
+								<h3 class="display-3 fw-bolder text-start mb-3">Share and find portfolios <span class="css-selector">quickly</span>
+									and <span class="css-selector">easily</span></span></h3>
+
+							</blockquote>
+							<figcaption class="blockquote-footer">
+							  By: <cite title="Nicolas Pietro">Nicolas Pietro</cite>
+							</figcaption>
+						  </figure>
+						  Myfolio is a personal project currently being developed by <a style="text-decoration: none;" target="_blank" href="https://github.com/nicolaspiet">Nicolas Pietro</a>, having in mind to make a site where people can easily post and find portfolios.
+						  image.pngWe are planning to add support for people looking for inspiration and also for the professional scope.
+					</div>
+					<div class="col-md my-3 text-center my-md-0">
+						<h3 class="display-4 fw-bolder text-center mb-0">Join our social <span class="css-selector">medias</span></h3>
+						<br>
+						<span class="">If you want to support us, consider join our social medias</span>
+						<br>
+						<div class="mt-2">
+						<a class="text-white" target="_blank" href="https://discord.gg/XHkmFSG2rb">
+							<span class="iconify" data-icon="akar-icons:discord-fill" data-width="50" data-height="50"></span>
+						</a>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col">
+						<h5 class="text-start fw-bolder">Contributors</h5>
+					</div>
+				</div>
+				<div class="row mb-5">
+					<div class="col text-start align-items-center">
+						<img id="myButton" src="components/images/cont-1.png" alt="" width="32" height="32" class="rounded-circle me-2">
+						<strong>Suero</strong>
+					</div>
+				</div>
+		</main>
+	</div>
+	
+	<div id="template" style="display: none;">
+		<a class="text-white" target="_blank" href="https://github.com/Suero152">
+			<span class="iconify-inline m-2" data-icon="akar-icons:github-fill" data-width="30" data-height="30"></span>
+		</a>
+	</div>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+	<script>
+	const template = document.getElementById('template');
+		tippy('#myButton', {
+		interactive: true,
+		sticky: true,
+		placement: "bottom",
+		interactiveBorder: 20,
+		delay: [200, 0],
+			content: template.innerHTML,
+			allowHTML: true,
+		});
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js" integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

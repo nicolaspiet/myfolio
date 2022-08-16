@@ -1,0 +1,12 @@
+.cover-container{
+  max-width:42em
+}
+
+.css-selector{
+  background:#3cc5cf;
+  background:linear-gradient(to right,#3cc5cf 11%,#cf1bb1 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  box-shadow:none;
+  text-shadow:none
+}
